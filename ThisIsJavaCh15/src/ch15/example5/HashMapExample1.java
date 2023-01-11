@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class HashMapExample1 {
-// ghd
+
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
@@ -28,10 +28,10 @@ public class HashMapExample1 {
 			System.out.printf("key : %s \tvlaue : %d", key, value).println();
 		}
 		System.out.println();
-
+		
 		map.remove("홍길동");
- 		System.out.println("총 Entry 수 : " + map.size());
-        map.clear();
+		System.out.println("총 Entry 수 : " + map.size());
+
 		Set<Map.Entry<String, Integer>> set = map.entrySet();
 		Iterator<Map.Entry<String, Integer>> iteratorEntry = set.iterator();
 
@@ -42,7 +42,6 @@ public class HashMapExample1 {
 			System.out.printf("key : %s \tvlaue : %d", key, value).println();
 		}
 		System.out.println();
-
 
 		map.clear();
 		System.out.println("total Entry : " + map.size());
