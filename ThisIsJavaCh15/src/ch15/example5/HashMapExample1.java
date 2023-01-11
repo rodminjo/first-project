@@ -28,10 +28,10 @@ public class HashMapExample1 {
 			System.out.printf("key : %s \tvlaue : %d", key, value).println();
 		}
 		System.out.println();
-		
-		map.remove("홍길동");
-		System.out.println("총 Entry 수 : " + map.size());
 
+		map.remove("홍길동");
+ 		System.out.println("총 Entry 수 : " + map.size());
+        map.clear();
 		Set<Map.Entry<String, Integer>> set = map.entrySet();
 		Iterator<Map.Entry<String, Integer>> iteratorEntry = set.iterator();
 
@@ -42,6 +42,7 @@ public class HashMapExample1 {
 			System.out.printf("key : %s \tvlaue : %d", key, value).println();
 		}
 		System.out.println();
+
 
 		map.clear();
 		System.out.println("total Entry : " + map.size());
