@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class HashMapExample1 {
-
+// ghd
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
