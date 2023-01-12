@@ -3,8 +3,9 @@ package ch15.example5;
 public class Student {
 	public int sno;
 	public String name;
-	
-	public Student(Integer sno, String name) {
+	public String score;
+
+    public Student(Integer sno, String name) {
 		this.sno = sno;
 		this.name = name;
 	}

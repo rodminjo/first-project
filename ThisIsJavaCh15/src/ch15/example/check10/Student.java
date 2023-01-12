@@ -1,19 +1,18 @@
 package ch15.example.check10;
 
-public class Student implements Comparable {
+public class Student implements Comparable<Student> {
 	public String id;
 	public int score;
 
-	public Student(Sting id, int score) {
+	public Student(String id, int score) {
 		this.id = id;
 		this.score = score;
 
 	}
 
 	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Student obj) {
+		return Integer.compare(this.score, (obj.score));
 	}
 
 }
